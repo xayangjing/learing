@@ -8,6 +8,7 @@ import codecs
 import time 
 from ucsmsdk.ucshandle import UcsHandle
 from ucsmsdk.ucscoreutils import search_class_id
+import csv2mysql
 
 handle = UcsHandle("10.107.123.220", "config", "config")
 
@@ -37,6 +38,7 @@ for i in range(len(Inventory_keys)):
         csvfile.write(codecs.BOM_UTF8)
         csvfile.write(data.csv)
     print '%s data file created' % Inventory_keys[i]
+    print 'Starting duemp files to DB'
 handle.logout()
 
 
