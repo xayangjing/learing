@@ -1,0 +1,35 @@
+from openpyxl import load_workbook
+import datetime
+import time
+import MySQLdb
+
+#read xls
+
+
+info = {'CreatedTime':'','UserName':'','FullFormattedMessage':''}
+conn = MySQLdb.connect(host='127.0.0.1',user='root',passwd='',db='vmlifecycle')
+cursor = conn.cursor()
+
+
+wb = load_workbook('vmreports.xlsx')
+wb_sheet_name = 'creation'
+wb_content = wb[wb_sheet_name]
+start_colums = "A2"
+end_rows = 'c'+ str(wb_content.max_row)
+
+
+for row in wb_content[start_colums:end_rows]:
+    #print'CreatedTime: %s ' % row[0].value
+    info['CreatedTime']=row[0].value
+    #print 'UserName: %s' % row[1].value
+    #info['UserName'] = row[1].value
+    info['UserName']  = MySQLdb.escape_string(row[1].value)
+    #print 'FullFormattedMessage: %s' % row[2].value
+    info['FullFormattedMessage'] =  row[2].value
+
+    sql ="INSERT into creation (CreatedTime,UserName,FullFormattedMessage) values ('%s', '%s', '%s' )" %(info['CreatedTime'].strftime("%Y-%m-%d %H:%M:%S"),info['UserName'], info["FullFormattedMessage"])
+    print sql
+    cursor.execute(sql)
+    conn.commit()
+print 'finished'
+conn.close()
