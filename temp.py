@@ -149,7 +149,7 @@ def get_disk_type(vm):
 
 VCenter = 'xavc01.active.tan'
 vC_user = 'tan\\vmadmin'
-vC_password = 'G0Virtual!'
+vC_password = ''
 si = SmartConnect(host=VCenter, user=vC_user, pwd=vC_password)
 content = si.RetrieveContent()
 container = content.rootFolder
