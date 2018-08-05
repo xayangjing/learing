@@ -1,0 +1,284 @@
+show server inventory '1/2' expand  detail
+Cisco Nexus Operating System (NX-OS) Software
+TAC support: http://www.cisco.com/tac
+Copyright (c) 2009, Cisco Systems, Inc. All rights reserved.
+The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under
+license. Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or the GNU
+Lesser General Public License (LGPL) Version 2.1. A copy of each
+such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://www.opensource.org/licenses/lgpl-2.1.php
+
+cisco-ucspe# terminal length 0
+cisco-ucspe# show server inventory '1/2' expand  detail
+Server 1/2:
+    Equipped Product Name: Cisco UCS B200 M3
+    Equipped PID: UCSB-B200-M3
+    Equipped VID: V01
+    Equipped Vendor: Cisco Systems Inc
+    Equipped Serial (SN): 3331
+    Equipped Revision: 0
+    Slot Status: Equipped
+    Acknowledged Product Name: Cisco UCS B200 M3
+    Acknowledged PID: UCSB-B200-M3
+    Acknowledged VID: V01
+    Acknowledged Vendor: Cisco Systems Inc
+    Acknowledged Serial (SN): 3331
+    Acknowledged Revision: 0
+    Acknowledged Memory (MB): 393216
+    Acknowledged Effective Memory (MB): 393216
+    Acknowledged Cores: 8
+    Acknowledged Adapters: 2
+    Acknowledged Burned-In UUID: 1b4e28ba-2fa1-11d2-0102-b9a761bde3fb
+    Acknowledged Dynamic UUID: 1b4e28ba-2fa1-11d2-0102-b9a761bde3fb
+
+    Bios:
+        Model: UCSB-B200-M3
+        Revision: 0
+        Serial:
+        Vendor: Cisco Systems, Inc.
+
+    Motherboard:
+        Product Name: Cisco UCS B200 M3
+        PID: UCSB-B200-M3
+        VID: V01
+        Vendor: Cisco Systems Inc
+        Serial (SN): 3331
+        HW Revision: 0
+
+        Array 1:
+            Product Name:
+            PID:
+            VID:
+            Vendor:
+            Serial (SN):
+            HW Revision: 0
+
+            DIMMS:
+
+            ID 1:
+                Location: A0
+                Presence: Equipped
+                Overall Status: Operable
+                Operability: N/A
+                Visibility: Yes
+                Product Name: 16GB DDR3-1600-MHz RDIMM/PC3-12800/dual rank/1.35v
+                PID: UCS-MR-1X162RY-A
+                VID: V01
+                Vendor: 0xAD00
+                Vendor Description: Hynix.
+                Vendor Part Number: HMT42GR7MFR4A-PB
+                Vendor Serial (SN): 0x06044B11
+                HW Revision: 0
+                Form Factor: FB DIMM
+                Type: Other
+                Capacity (MB): 16384
+                Clock: 1600
+                Latency: 1.200000
+                Width: 64
+
+            ID 2:
+                Location: A1
+                Presence: Equipped
+                Overall Status: Operable
+                Operability: N/A
+                Visibility: Yes
+                Product Name: 16GB DDR3-1600-MHz RDIMM/PC3-12800/dual rank/1.35v
+                PID: UCS-MR-1X162RY-A
+                VID: V01
+                Vendor: 0xAD00
+                Vendor Description: Hynix.
+                Vendor Part Number: HMT42GR7MFR4A-PB
+                Vendor Serial (SN): 0x06044B21
+                HW Revision: 0
+                Form Factor: FB DIMM
+                Type: Other
+                Capacity (MB): 16384
+                Clock: 1600
+                Latency: 1.200000
+                Width: 64
+
+            ID 3:
+                Location: A2
+                Presence: Equipped
+                Overall Status: Operable
+                Operability: N/A
+                Visibility: Yes
+                Product Name: 16GB DDR3-1600-MHz RDIMM/PC3-12800/dual rank/1.35v
+                PID: UCS-MR-1X162RY-A
+                VID: V01
+                Vendor: 0xAD00
+                Vendor Description: Hynix.
+                Vendor Part Number: HMT42GR7MFR4A-PB
+                Vendor Serial (SN): 0x06044B31
+                HW Revision: 0
+                Form Factor: FB DIMM
+                Type: Other
+                Capacity (MB): 16384
+                Clock: 1600
+                Latency: 1.200000
+                Width: 64
+
+            ID 4:
+                Location: B0
+                Presence: Equipped
+                Overall Status: Operable
+                Operability: N/A
+                Visibility: Yes
+                Product Name: 16GB DDR3-1600-MHz RDIMM/PC3-12800/dual rank/1.35v
+                PID: UCS-MR-1X162RY-A
+                VID: V01
+                Vendor: 0xAD00
+                Vendor Description: Hynix.
+                Vendor Part Number: HMT42GR7MFR4A-PB
+                Vendor Serial (SN): 0x06044B41
+                HW Revision: 0
+                Form Factor: FB DIMM
+                Type: Other
+                Capacity (MB): 16384
+                Clock: 1600
+                Latency: 1.200000
+                Width: 64
+
+            ID 5:
+                Location: B1
+                Presence: Equipped
+                Overall Status: Operable
+                Operability: N/A
+                Visibility: Yes
+                Product Name: 16GB DDR3-1600-MHz RDIMM/PC3-12800/dual rank/1.35v
+                PID: UCS-MR-1X162RY-A
+                VID: V01
+                Vendor: 0xAD00
+                Vendor Description: Hynix.
+                Vendor Part Number: HMT42GR7MFR4A-PB
+                Vendor Serial (SN): 0x06044B51
+                HW Revision: 0
+                Form Factor: FB DIMM
+                Type: Other
+                Capacity (MB): 16384
+                Clock: 1600
+                Latency: 1.200000
+                Width: 64
+
+            ID 6:
+                Location: B2
+                Presence: Equipped
+                Overall Status: Operable
+                Operability: N/A
+                Visibility: Yes
+                Product Name: 16GB DDR3-1600-MHz RDIMM/PC3-12800/dual rank/1.35v
+                PID: UCS-MR-1X162RY-A
+                VID: V01
+                Vendor: 0xAD00
+                Vendor Description: Hynix.
+                Vendor Part Number: HMT42GR7MFR4A-PB
+                Vendor Serial (SN): 0x06044B61
+                HW Revision: 0
+                Form Factor: FB DIMM
+                Type: Other
+                Capacity (MB): 16384
+                Clock: 1600
+                Latency: 1.200000
+                Width: 64
+
+            ID 7:
+                Location: C0
+                Presence: Equipped
+                Overall Status: Operable
+                Operability: N/A
+                Visibility: Yes
+                Product Name: 16GB DDR3-1600-MHz RDIMM/PC3-12800/dual rank/1.35v
+                PID: UCS-MR-1X162RY-A
+                VID: V01
+                Vendor: 0xAD00
+                Vendor Description: Hynix.
+                Vendor Part Number: HMT42GR7MFR4A-PB
+                Vendor Serial (SN): 0x06044B71
+                HW Revision: 0
+                Form Factor: FB DIMM
+                Type: Other
+                Capacity (MB): 16384
+                Clock: 1600
+                Latency: 1.200000
+                Width: 64
+
+            ID 8:
+                Location: C1
+                Presence: Equipped
+                Overall Status: Operable
+                Operability: N/A
+                Visibility: Yes
+                Product Name: 16GB DDR3-1600-MHz RDIMM/PC3-12800/dual rank/1.35v
+                PID: UCS-MR-1X162RY-A
+                VID: V01
+                Vendor: 0xAD00
+                Vendor Description: Hynix.
+                Vendor Part Number: HMT42GR7MFR4A-PB
+                Vendor Serial (SN): 0x06044B81
+                HW Revision: 0
+                Form Factor: FB DIMM
+                Type: Other
+                Capacity (MB): 16384
+                Clock: 1600
+                Latency: 1.200000
+                Width: 64
+
+            ID 9:
+                Location: C2
+                Presence: Equipped
+                Overall Status: Operable
+                Operability: N/A
+                Visibility: Yes
+                Product Name: 16GB DDR3-1600-MHz RDIMM/PC3-12800/dual rank/1.35v
+                PID: UCS-MR-1X162RY-A
+                VID: V01
+                Vendor: 0xAD00
+                Vendor Description: Hynix.
+                Vendor Part Number: HMT42GR7MFR4A-PB
+                Vendor Serial (SN): 0x06044B91
+                HW Revision: 0
+                Form Factor: FB DIMM
+                Type: Other
+                Capacity (MB): 16384
+                Clock: 1600
+                Latency: 1.200000
+                Width: 64
+
+            ID 10:
+                Location: D0
+                Presence: Equipped
+                Overall Status: Operable
+                Operability: N/A
+                Visibility: Yes
+                Product Name: 16GB DDR3-1600-MHz RDIMM/PC3-12800/dual rank/1.35v
+                PID: UCS-MR-1X162RY-A
+                VID: V01
+                Vendor: 0xAD00
+                Vendor Description: Hynix.
+                Vendor Part Number: HMT42GR7MFR4A-PB
+                Vendor Serial (SN): 0x06044B101
+                HW Revision: 0
+                Form Factor: FB DIMM
+                Type: Other
+                Capacity (MB): 16384
+                Clock: 1600
+                Latency: 1.200000
+                Width: 64
+
+            ID 11:
+                Location: D1
+                Presence: Equipped
+                Overall Status: Operable
+                Operability: N/A
+                Visibility: Yes
+                Product Name: 16GB DDR3-1600-MHz RDIMM/PC3-12800/dual rank/1.35v
+                PID: UCS-MR-1X162RY-A
+                VID: V01
+                Vendor: 0xAD00
+                Vendor Description: Hynix.
+                Vendor Part Number: HMT42GR7MFR4A-PB
+                Vendor Serial (SN): 0x06044B111
+                HW R

@@ -6,9 +6,15 @@ import time
 import argparse
 import collections
 import MySQLdb
+<<<<<<< HEAD
 import warnings
 # suppress annoying mysql warnings
 warnings.filterwarnings(action='ignore', category=MySQLdb.Warning)
+=======
+import warnings 
+# suppress annoying mysql warnings
+warnings.filterwarnings(action='ignore', category=MySQLdb.Warning) 
+>>>>>>> a949e917e3035a589390112ec6e7c66771c28bbf
 
 
 
@@ -47,7 +53,11 @@ def get_type(s):
             pass
         else:
             return dt_type
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> a949e917e3035a589390112ec6e7c66771c28bbf
     # doesn't match any other types so assume text
     if len(s) > 255:
         return 'text'
@@ -80,7 +90,11 @@ def get_col_types(input_file, max_rows=1000):
             for col_i, s in enumerate(row):
                 data_type = get_type(s)
                 csv_types[header[col_i]].append(data_type)
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> a949e917e3035a589390112ec6e7c66771c28bbf
         if row_i == max_rows:
             break
 
@@ -91,13 +105,22 @@ def get_col_types(input_file, max_rows=1000):
 def get_schema(table, header, col_types):
     """Generate the schema for this table from given types and columns
     """
+<<<<<<< HEAD
     schema_sql = """CREATE TABLE IF NOT EXISTS %s (
         iterms int NOT NULL AUTO_INCREMENT,""" % table
+=======
+    schema_sql = """CREATE TABLE IF NOT EXISTS %s ( 
+        iterms int NOT NULL AUTO_INCREMENT,""" % table 
+>>>>>>> a949e917e3035a589390112ec6e7c66771c28bbf
 
     for col_name, col_type in zip(header, col_types):
         schema_sql += '\n%s %s,' % (col_name, col_type)
 
+<<<<<<< HEAD
     schema_sql += """\nPRIMARY KEY (iterms)
+=======
+    schema_sql += """\nPRIMARY KEY (Iterms)
+>>>>>>> a949e917e3035a589390112ec6e7c66771c28bbf
         ) DEFAULT CHARSET=utf8;"""
     return schema_sql
 
@@ -153,8 +176,13 @@ def main(input_file, user, password, host, table, database, max_inserts=10000):
             schema_sql = get_schema(table, header, col_types)
             print schema_sql
             # create table
+<<<<<<< HEAD
         #    cursor.execute('DROP TABLE IF EXISTS %s;' % table)
         #    cursor.execute(schema_sql)
+=======
+            cursor.execute('DROP TABLE IF EXISTS %s;' % table)
+            cursor.execute(schema_sql)
+>>>>>>> a949e917e3035a589390112ec6e7c66771c28bbf
             # create index for more efficient access
             try:
                 cursor.execute('CREATE INDEX ids ON %s (iterms);' % table)
@@ -184,5 +212,10 @@ if __name__ == '__main__':
     if not args.table:
         # use input file name for table
         args.table = os.path.splitext(os.path.basename(args.input_file))[0]
+<<<<<<< HEAD
 
     main(args.input_file, args.user, args.password, args.host, args.table, args.database)
+=======
+    
+    main(args.input_file, args.user, args.password, args.host, args.table, args.database)
+>>>>>>> a949e917e3035a589390112ec6e7c66771c28bbf
