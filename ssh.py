@@ -2,7 +2,6 @@ import paramiko
 import time
 
 
-
 def disable_paging(remote_conn):
     '''Disable paging on a Cisco router'''
 
@@ -17,7 +16,6 @@ def disable_paging(remote_conn):
 
 if __name__ == '__main__':
 
-
     # VARIABLES THAT NEED CHANGED
     ip = '10.107.123.220'
     username = 'cliuser'
@@ -28,10 +26,11 @@ if __name__ == '__main__':
 
     # Automatically add untrusted hosts (make sure okay for security policy in your environment)
     remote_conn_pre.set_missing_host_key_policy(
-         paramiko.AutoAddPolicy())
+        paramiko.AutoAddPolicy())
 
     # initiate SSH connection
-    remote_conn_pre.connect(ip, username=username, password=password, look_for_keys=False, allow_agent=False)
+    remote_conn_pre.connect(
+        ip, username=username, password=password, look_for_keys=False, allow_agent=False)
     print "SSH connection established to %s" % ip
 
     # Use invoke_shell to establish an 'interactive session'
@@ -56,5 +55,5 @@ if __name__ == '__main__':
 
     output = remote_conn.recv(10000)
     print output
-    with open('result.txt','w') as f:
+    with open('result.txt', 'w') as f:
         f.write(output)
