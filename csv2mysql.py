@@ -1,6 +1,6 @@
 import os
 import re
-import sys
+import sys_learing
 import csv
 import time
 import argparse

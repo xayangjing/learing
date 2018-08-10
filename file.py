@@ -1,4 +1,4 @@
-import sys
+import sys_learing
 import time
 
 file = open('file.txt', 'a', encoding='utf8')
