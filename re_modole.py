@@ -110,3 +110,20 @@ print(ret.group())
 print(ret.group('id'))
 print(ret.group('name'))
 
+print(re.match('asd', 'fhsasd'))
+
+print(re.match('asd', 'asdfhsasd').group())
+
+print(re.split('[k]', 'ajksal'))
+
+print(re.split('[j,s]', '1sajksal'))
+
+print(re.split('[j,s]', 'sdjksal'))
+
+print(re.sub('a..x', 's..b', 'hfjasalexhf'))
+
+obj = re.compile('\.com')
+
+ret = obj.findall('fahasdasdf.comakkdf')
+
+print(ret)
