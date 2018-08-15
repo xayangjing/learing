@@ -1,0 +1,6 @@
+import foo
+
+foo.hello()
+
+
+
